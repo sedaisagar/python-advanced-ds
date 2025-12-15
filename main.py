@@ -15,15 +15,15 @@
 # from utils.normal import SeabornUtility
 # # normal_instance = SeabornUtility()
 # # normal_instance.plot()
-import pandas as pd
-import matplotlib.pyplot as plt
+# import pandas as pd
+# import matplotlib.pyplot as plt
 
-df = pd.DataFrame({
-    'category': ['A', 'B', 'C', 'D', 'E', 'F'],
-    'value': [10, 20, 15, 25, 30, 11],
-    'x': [1, 2, 3, 4, 5, 6],
-    'y': [5, 7, 4, 9, 3, 8]
-})
+# df = pd.DataFrame({
+#     'category': ['A', 'B', 'C', 'D', 'E', 'F'],
+#     'value': [10, 20, 15, 25, 30, 11],
+#     'x': [1, 2, 3, 4, 5, 6],
+#     'y': [5, 7, 4, 9, 3, 8]
+# })
 
 # df.plot(kind='bar', x='x', y='y', title='Bar Graph Example')
 # plt.tight_layout()
@@ -46,3 +46,15 @@ df = pd.DataFrame({
 # Line Graph
 # df.plot(kind='line', x='x', y='value', marker='o', title='Line Graph Example')
 # plt.show()
+
+# x = "sagar"
+
+# assert  x != "sagar"
+
+
+
+from ui.main import CRUDApp as MainUiComponent
+
+ui_component = MainUiComponent()
+
+ui_component.show_ui()
