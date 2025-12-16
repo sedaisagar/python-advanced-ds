@@ -53,8 +53,17 @@
 
 
 
-from ui.main import CRUDApp as MainUiComponent
+# from ui.main import CRUDApp as MainUiComponent
 
-ui_component = MainUiComponent()
+# ui_component = MainUiComponent()
 
-ui_component.show_ui()
+# ui_component.show_ui()
+
+
+from scraper.bs_scraper import BsScraper
+from scraper.scrapy_scraper import ScrapyScraper
+
+
+bs_instance = BsScraper(link="https://quotes.toscrape.com/page")
+rv = bs_instance.scrap()
+print(rv)
