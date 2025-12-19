@@ -60,10 +60,34 @@
 # ui_component.show_ui()
 
 
-from scraper.bs_scraper import BsScraper
-from scraper.scrapy_scraper import ScrapyScraper
+# from scraper.bs_scraper import BsScraper
+# from scraper.scrapy_scraper import ScrapyScraper
 
 
-bs_instance = BsScraper(link="https://quotes.toscrape.com/page")
-rv = bs_instance.scrap()
-print(rv)
+# # bs_instance = BsScraper(link="https://quotes.toscrape.com/page")
+# # rv = bs_instance.scrap()
+
+# from scraper.bs_scraper import BsScraper
+
+
+# bs_instance = BsScraper(link="https://www.sidhakura.com/society", mode="sidhakura")
+# rv = bs_instance.scrap()
+# print(rv)
+
+
+# def generate_upto5(n=5, items=[]):
+#     n -=1
+#     items.append(f"a-{5-n}")
+#     if n >0:
+#             return generate_upto5(n, items)
+#     return items
+
+# items = generate_upto5()
+# print(items)
+
+
+from scraper_app.ui import DeskTopApp
+
+
+app = DeskTopApp()
+app.initiate()
